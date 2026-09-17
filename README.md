@@ -14,3 +14,8 @@ Este tópico sera atualizado semanalmente, com todas as novidades, dicas, e feed
 Hoje, adicionei meu primeito projeto acadêmico utilizando a linguagem Python, criei uma calculadora de consumo energético voltada a consulta de consumo de eletrodomésticos; Já estão sendo trabalhas futuras implementações para o projeto e sua continuação
 
 *Today, I added my first academic project using the Python language: I created an energy consumption calculator for checking the energy consumption of household appliances. Future implementations and its continuation are already underway.*
+
+### 12 Setembro/26 - September 12th/26
+Hoje, foram adicionados novos documentos ao meu repositório de Projetos Acadêmicos, sendo eles a Calculadora de descontos e o Readme do mesmo, onde o mesmo ja apresenta um bom funcionamento e otimos resultados durante a apresentacao aos meus professores, implementaçoes em andamento e com previsao de serem adicionadas ainda esta semana
+
+*Today, new documents were added to my Academic Projects repository, namely the Discount Calculator and its Readme, where it already shows good functionality and great results during the presentation to my teachers, with implementations in progress and expected to be added later this week.*
