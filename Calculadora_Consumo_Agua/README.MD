@@ -1,6 +1,8 @@
 # Calculadora de Consumo de Agua - *Water Consumption Calculator*
-## Faça o calculo de seu consumo e confira se esta dentro do consumo adequado - *Calculate your consumption and check if it’s within the proper range*
+## Faça o calculo de seu consumo e confira se esta dentro do consumo adequado - *Calculate your consumption and check if it’s within the proper range* 
 ### Idealizaçao do projeto - *Project conception*
+### Linguagem Utilizada - *Programming language used*: 
+![Python](https://img.shields.io/badge/python-%233670A0.svg?style=for-the-badge&logo=python&logoColor=ffdd54)
 ---
 O projeto foi inicalmente idealizado como uma atividade academica, sendo dada instruções referênte as classificações que deveriam ser utilizadas, e os parâmetros que se enquadram para cada classificação.
 
