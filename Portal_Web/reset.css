@@ -1,0 +1,62 @@
+/* ==========================================================
+   RESET.CSS - baseado no Reset CSS v2.0 de Eric Meyer
+   Objetivo: remover os estilos padrão que cada navegador aplica
+   (margens, espaçamentos, bordas, tamanhos de fonte etc.), para
+   que a página fique igual em qualquer navegador.
+   Este arquivo deve ser vinculado ANTES do estilo.css.
+   ========================================================== */
+
+/* Zera margin, padding, border e font-size de todos os elementos listados */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;        /* tamanho de fonte igual ao do elemento pai */
+    font: inherit;          /* herda fonte do elemento pai */
+    vertical-align: baseline;
+}
+
+/* Garante que as tags do HTML5 sejam exibidas como bloco em navegadores antigos */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* Altura de linha inicial do corpo da página */
+body {
+    line-height: 1;
+}
+
+/* Remove os marcadores (bolinhas e números) das listas */
+ol, ul {
+    list-style: none;
+}
+
+/* Remove as aspas automáticas de citações */
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* Remove espaços extras entre as células das tabelas */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
