@@ -1,31 +1,9 @@
-/* ==========================================================
-   ESTILO.CSS - CSS EXTERNO
-   Este arquivo vem DEPOIS do reset.css no HTML. Por isso, as
-   regras daqui prevalecem sobre as do reset.
-
-   PALETA DE CORES DO SITE
-   Preto ................ #0d0d0d  (cabeçalho e rodapé)
-   Cinza escuro ......... #262626  (fundo da página, no CSS interno do HTML)
-   Cinza dos cartões .... #3a3a3a
-   Cinza de bordas ...... #5a5a5a
-   Cinza claro .......... #e6e6e6  (textos) e #b3b3b3 (textos secundários)
-   Amarelo .............. #f5c518
-   Dourado .............. #d4af37
-   ========================================================== */
-
-
-/* ---------- CAIXAS COM TAMANHO PREVISÍVEL ---------- */
-/* box-sizing: border-box faz o padding e a borda ficarem DENTRO da largura
-   do elemento. Assim, os cartões cabem certinho na margem da página. */
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
 
 /* ---------- BASE DA PÁGINA ---------- */
-/* Fonte e cor de texto padrão. O reset removeu esses estilos,
-   então precisamos defini-los de novo.
-   A cor de fundo está no CSS interno (tag <style> do HTML). */
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -35,8 +13,6 @@ body {
 
 
 /* ---------- CABEÇALHO (identificado pelo ID #cabecalho no HTML) ---------- */
-/* Fundo, cor do título, espaçamento e alinhamento à esquerda estão no CSS inline.
-   Aqui ficam só os estilos dos textos dentro dele (classes). */
 .nome-portal {
     font-size: 2.2rem;
     font-weight: bold;
@@ -50,12 +26,6 @@ body {
 
 
 /* ---------- FLEXBOX: CONTÊINER DOS TRÊS CARTÕES ---------- */
-/* display: flex coloca os filhos diretos (as 3 <section>) lado a lado.
-   justify-content: distribui os cartões no eixo horizontal.
-   align-items: stretch estica todos os cartões até a altura do maior,
-   então os três ficam com a MESMA ALTURA.
-   gap: espaço entre os cartões.
-   padding: 30px cria a margem da página, a mesma usada no cabeçalho. */
 .container-secoes {
     display: flex;
     justify-content: center;
@@ -67,11 +37,6 @@ body {
 
 
 /* ---------- CLASSE .secao: estilo comum aos três cartões ---------- */
-/* flex: 1 1 0 faz os três cartões terem a MESMA LARGURA, dividindo o
-   espaço disponível em partes iguais.
-   min-width: 0 permite que o cartão encolha sem que as imagens o empurrem.
-   display: flex + flex-direction: column organiza o conteúdo do cartão
-   de cima para baixo (título, texto e imagens). */
 .secao {
     flex: 1 1 0;
     min-width: 0;
@@ -85,23 +50,20 @@ body {
 
 
 /* ---------- IDs: estilo único de cada cartão ---------- */
-/* Cada ID identifica UM cartão e dá a ele uma faixa de destaque
-   em amarelo ou dourado. */
 #filmes-series {
-    border-top: 6px solid #f5c518;   /* amarelo */
+    border-top: 6px solid #f5c518;
 }
 
 #musica-podcasts {
-    border-top: 6px solid #d4af37;   /* dourado */
+    border-top: 6px solid #d4af37;
 }
 
 #games-tecnologia {
-    border-top: 6px solid #f5c518;   /* amarelo */
+    border-top: 6px solid #f5c518;
 }
 
 
 /* ---------- CLASSES: padronizam títulos e textos ---------- */
-/* .titulo-secao: usada nos três <h1>. Alterando aqui, os três títulos mudam juntos. */
 .titulo-secao {
     font-size: 1.6rem;
     font-weight: bold;
@@ -110,10 +72,6 @@ body {
     margin-bottom: 15px;
 }
 
-/* .descricao-secao: bloco com os parágrafos de cada cartão.
-   flex: 1 faz esse bloco ocupar todo o espaço que sobrar no cartão.
-   Resultado: a área das imagens sempre fica no mesmo lugar nos três cartões,
-   mesmo que um texto seja maior que o outro. */
 .descricao-secao {
     flex: 1;
 }
@@ -127,7 +85,6 @@ body {
 
 
 /* ---------- ÁREA DAS IMAGENS ---------- */
-/* Empilha as três imagens (cada uma com a sua legenda), com espaço entre elas. */
 .area-imagens {
     display: flex;
     flex-direction: column;
@@ -142,12 +99,6 @@ body {
 
 
 /* ---------- PROPRIEDADES DAS IMAGENS ---------- */
-/* width: 100% e max-width: 100% fazem a imagem se ajustar à largura do cartão.
-   aspect-ratio: 16 / 9 dá a TODAS as imagens a mesma proporção (mesma altura),
-   o que mantém os campos de imagem alinhados entre os cartões.
-   object-fit: cover preenche o espaço sem deformar a imagem (corta o excesso).
-   display: block remove o espaço extra abaixo da imagem.
-   border e border-radius criam a moldura cinza com cantos arredondados. */
 .img-portal {
     width: 100%;
     max-width: 100%;
@@ -160,9 +111,6 @@ body {
 
 
 /* ---------- LEGENDAS DAS IMAGENS ---------- */
-/* min-height: 2.8em reserva o espaço de 2 linhas para toda legenda,
-   então todas as imagens ficam alinhadas, mesmo com legendas de tamanhos diferentes.
-   Se você escrever legendas maiores que 2 linhas, aumente esse valor. */
 .legenda-img {
     margin-top: 8px;
     font-size: 0.85rem;
@@ -197,8 +145,6 @@ body {
 
 
 /* ---------- RESPONSIVIDADE (extra) ---------- */
-/* Em telas pequenas (celulares), os cartões ficam um embaixo do outro,
-   porque o Flexbox passa a usar a direção "column". */
 @media (max-width: 768px) {
     .container-secoes {
         flex-direction: column;
